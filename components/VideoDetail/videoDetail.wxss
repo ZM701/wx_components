@@ -1,0 +1,55 @@
+/* components/VideoDetail/videoDetail.wxss */
+.total{
+  padding: 5px;
+  font-size: 32rpx;
+}
+.total .more{
+  overflow: hidden; 
+  margin-bottom: 5px;
+}
+.total .more>text:nth-of-type(1){
+  display: block;
+  float: left;
+}
+.total .more>text:nth-of-type(2){
+  display: block;
+  float: right;
+}
+.choose{
+  display: flex;
+  flex-direction: row;
+}
+.choose>view{
+  width: 33%;
+  margin-right: 8px;
+}
+.choose>view:last-of-type{
+  margin-right: 0;
+}
+.imgs{
+  width: 100%;
+  height: 100px;
+  border: 1px solid #000;
+}
+.title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-wrap:break-word; 
+  word-break:break-all; 
+  margin-bottom: 5px;
+}
+.price{
+  overflow: hidden;
+  padding: 0 5px;
+}
+.price>text:nth-of-type(1){
+  color: red;
+  float: left;
+}
+.price>text:nth-of-type(2){
+  color: #ccc;
+  float: right;
+  text-decoration: line-through;
+}

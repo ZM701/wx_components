@@ -1,0 +1,49 @@
+/* components/videoSecond/videoSecond.wxss */
+/* components/video/video.wxss */
+/* 横屏的样式 */
+.videoTotal{
+  padding: 5px;
+}
+.title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-wrap:break-word; 
+    word-break:break-all; 
+    margin-bottom: 5px;
+}
+.title{
+  font-size: 32rpx;
+}
+.videos{
+  width: 100%;
+  height: 200px;
+}
+.userInfo{
+  font-size: 30rpx;
+}
+.userInfo text{
+  margin-right: 10px;
+}
+/* 竖屏的样式 */
+.videoH{
+  overflow: hidden;
+  margin-top: 5px;
+}
+.videoH>view,.videoH>video{
+  float: left;
+}
+.videoH>view{
+  width: 70%;
+}
+.videoH>video{
+  width: 30%;
+  height: 100px;
+}
+.videoH>view .title{
+  vertical-align: top;
+}
+.videoH>view .userInfo{
+  line-height: 100px;
+}

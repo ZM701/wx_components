@@ -1,0 +1,11 @@
+/* components/Header/header.wxss */
+.head{
+  display: flex;
+  flex-direction: row;
+}
+.head view{
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}

@@ -1,0 +1,4 @@
+<!--components/Footer/footer.wxml-->
+<view>
+这是footer的内容
+</view>

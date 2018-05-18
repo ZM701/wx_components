@@ -1,0 +1,5 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <video src='{{videoUrl}}' autoplay='autoplay'></video>
+</view>
+

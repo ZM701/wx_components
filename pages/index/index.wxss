@@ -1,0 +1,12 @@
+/**index.wxss**/
+.uploadWrap{height:160rpx; width:100%; display: flex; display: -webkit-box; flex-direction: column;}  
+.upload_Item{ width: 160rpx; height: 160rpx;  flex: 1;}  
+.upload_Item_img{ width: 160rpx; height: 160rpx;border:1px solid red;}  
+
+.txt{position: relative; line-height: 20px; max-height: 40px;overflow: hidden;}
+.txt::after{content: "..."; position: absolute; bottom: 0; right: 0; padding-left: 40px;
+background: -webkit-linear-gradient(left, transparent, #fff 55%);
+background: -o-linear-gradient(right, transparent, #fff 55%);
+background: -moz-linear-gradient(right, transparent, #fff 55%);
+background: linear-gradient(to right, transparent, #fff 55%);
+}

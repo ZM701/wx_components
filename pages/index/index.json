@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dialog": "/components/Dialog/dialog",
+    "header":"/components/Header/header",
+    "footer": "/components/Footer/footer"
+  }
+}

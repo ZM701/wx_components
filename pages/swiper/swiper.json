@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "videoCom": "/components/VideoCom/videoCom",
+    "videoDetail": "/components/VideoDetail/videoDetail",
+    "voteActive": "/components/VoteActive/voteActive",
+    "sort": "/components/Sort/sort",
+    "listPage": "/components/ListPage/listPage"   
+  },
+  "enablePullDownRefresh": true
+}

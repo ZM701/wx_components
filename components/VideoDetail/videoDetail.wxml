@@ -1,0 +1,21 @@
+<!--components/VideoDetail/videoDetail.wxml-->
+<view class='total'>
+  <view class='more'><text>你可能喜欢</text><text>更多></text></view>
+  <view class='choose'>
+    <view>
+      <image class="imgs" src="{{imgUrl}}" mode="aspectFill"></image>
+      <view class='title'>{{imgTitle}}</view>
+      <view class='price'><text>￥{{currentPrice}}</text>  <text>￥{{originalPrice}}</text></view>
+    </view>
+    <view>
+      <image class="imgs" src="{{imgUrl}}" mode="aspectFill"></image>
+      <view class='title'>{{imgTitle}}</view>
+      <view class='price'><text>￥{{currentPrice}}</text>  <text>￥{{originalPrice}}</text></view>
+    </view>
+    <view>
+      <image class="imgs" src="{{imgUrl}}" mode="aspectFill"></image>
+      <view class='title'>{{imgTitle}}</view>
+      <view class='price'><text>￥{{currentPrice}}</text>  <text>￥{{originalPrice}}</text></view>
+    </view>   
+  </view>
+</view>

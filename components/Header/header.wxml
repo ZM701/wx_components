@@ -1,0 +1,6 @@
+<!--components/Header/header.wxml-->
+<view class='head'>
+  <view>首页</view>
+  <view>公司概况</view>
+  <view>联系我们</view>
+</view>

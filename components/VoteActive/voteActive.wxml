@@ -1,0 +1,23 @@
+<!--components/VoteActive/voteActive.wxml-->
+<view class='total'>
+  <view class='main'>
+    <view class='left'>
+      <image class="imgs" src="{{imgUrl}}" mode="aspectFill"></image>
+      <text class='time'>{{day}}天{{hours}}小时{{minutes}}分</text>
+    </view>
+    <view class='right'>
+      <view class='title'>{{activeTitle}}</view>
+      <view class='number'>参与人数{{activeNumber}}人</view>
+    </view>
+  </view>
+  <view class='main'>
+    <view class='left'>
+      <image class="imgs" src="{{imgUrl}}" mode="aspectFill"></image>
+      <text class='time'>{{day}}天{{hours}}小时{{minutes}}分</text>
+    </view>
+    <view class='right'>
+      <view class='title'>{{activeTitle}}</view>
+      <view class='number'>参与人数{{activeNumber}}人</view>
+    </view>
+  </view>
+</view>

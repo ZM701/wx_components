@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+    <dialog id='dialog' 
+      title='我是标题' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='知道了' 
+      confirm='谢谢你'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+    </dialog>
+    
+    <button type="primary" bindtap="showDialog"> ClickMe! </button>
+</view>
+
+<view>
+  <header id="header"></header>
+</view>
+
+<scroll-view scroll-x="true">  
+<view class="uploadWrap" scroll-x="true">  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test1.jpg"></image>  
+  </view>  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test2.jpg"></image>  
+  </view>  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test3.jpg"></image>  
+  </view>  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test4.jpg"></image>  
+  </view>  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test1.jpg"></image>  
+  </view>  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test2.jpg"></image>  
+  </view>  
+  <view class="upload_Item">  
+    <image class="upload_Item_img"  src="../../image/test3.jpg"></image> 
+  </view>  
+</view>  
+</scroll-view> 
+
+
+<view class='txt'>啊哈哈奥哈哈或或或或或或或或或或或或或或或或或或或或或123</view>
+
+
+
+<view>
+  <footer id="footer"></footer>  
+</view>
+
+<!-- 滑动切换页面 -->
+

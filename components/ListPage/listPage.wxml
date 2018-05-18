@@ -1,0 +1,7 @@
+<!--components/ListPage/listPage.wxml-->
+<scroll-view scroll-y="true" style="height:{{windowHeight}}px;"
+    class="list" bindscrolltolower="bindDownLoad">
+<view wx:for="{{list}}" class="list" wx:key="{{index}}">
+	<view>{{index+1}}:{{item.article_title}}</view>
+</view>
+  </scroll-view>

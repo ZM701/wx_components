@@ -1,0 +1,6 @@
+/* components/ListPage/listPage.wxss */
+.list view{
+	background: #ccc;
+	padding: 10px 5px;
+	margin-bottom: 2px;
+}

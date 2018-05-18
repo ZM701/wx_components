@@ -1,0 +1,23 @@
+<!--components/video/video.wxml-->
+<view class='videoTotal' wx:for="{{videoData.src}}" wx:key="{{index}}">
+  <view wx:if="{{item.type==0}}">
+    <text class='title'>{{videoTitle}}</text>
+    <video src="{{videoUrl}}" class='videos'></video>
+    <view class='userInfo'>
+      <text bindtap='_user'>用户昵称</text>
+      <text>评论{{videoComment}}</text>
+      <text>转发{{videoSend}}</text>
+    </view>
+  </view>
+  <view class='videoTotal videoH' wx:else>
+    <view>
+      <text class='title'>{{videoTitle}}</text>
+      <view class='userInfo'>
+        <text>用户昵称</text>
+        <text>评论{{videoComment}}</text>
+        <text>转发{{videoSend}}</text>
+      </view>
+    </view>
+    <video src="{{videoUrl}}"></video>
+  </view> 
+</view>

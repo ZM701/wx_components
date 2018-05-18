@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/swiper/swiper",
+    "pages/video2/video2",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/findList/findList"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "视频1"
+      },
+      {
+        "pagePath": "pages/video2/video2",
+        "text": "视频2"
+      }
+    ]
+  }
+}

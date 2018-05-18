@@ -1,0 +1,106 @@
+<!--pages/swiper/swiper.wxml-->
+<!-- 搜索框 -->
+<view style='position:fixed; width:100%;left:0;top:0;z-index:9999'>
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" disabled='true' placeholder="搜索入口" bindtap="wxSearchTab" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <view>搜索的内容：{{ searchValue}}</view>  -->
+
+
+
+<view class="container">
+  <!-- tab导航栏 -->
+  <!-- scroll-left属性可以控制滚动条位置 -->
+  <!-- scroll-with-animation滚动添加动画过渡 -->
+  <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+      <view class="nav-item {{currentTab == idx ?'active':''}}" data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+    </block>
+  </scroll-view>
+  <include src="../../components/Refresh/refreshHeaderView.wxml" />
+ <!-- <include src="../../components/Refresh/loadMoreFooterView.wxml"/>  -->
+<scroll-view class="scroll_container" scroll-y="true" style="position:fixed;width:100%;left:0;height:{{windowHeight}}px;top:{{loadMoreHeight == 0? refreshHeight+50:-loadMoreHeight-100}}px;bottom:{{loadMoreHeight}}px;"  bindscroll="scroll" bindscrolltolower="lower" bindscrolltoupper="upper" bindtouchstart="start" bindtouchend="end" > 
+<view style="width:100%;height:100%" bindtouchmove="move">
+  <!-- 页面内容 -->
+  <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+    <swiper-item class="tab-content">
+      <!-- 第一块内容 -->
+      <view>
+         <videoCom id="video"></videoCom> 
+      </view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <!-- 第二块内容 -->
+      <view>
+        <videoDetail id="videoDetail"></videoDetail>
+      </view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <!-- 第三块内容 -->
+      <view>
+        <voteActive id="voteActive"></voteActive>
+      </view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <!-- 第四块内容 -->
+      <view>
+        <sort id="sort"></sort>
+      </view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <!-- 第五块内容 start-->
+      <scroll-view scroll-x="true">  
+        <view class="uploadWrap" scroll-x="true">  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test1.jpg"></image>  
+          </view>  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test2.jpg"></image>  
+          </view>  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test3.jpg"></image>  
+          </view>  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test4.jpg"></image>  
+          </view>  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test1.jpg"></image>  
+          </view>  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test2.jpg"></image>  
+          </view>  
+          <view class="upload_Item">  
+            <image class="upload_Item_img"  src="../../image/test3.jpg"></image>  
+          </view>  
+        </view>  
+      </scroll-view> 
+      <!-- 第五块内容 end -->
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <view>
+        <!-- 第六块内容 -->
+        <listPage id="listPage"></listPage>
+      </view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <view>7</view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <view>8</view>
+    </swiper-item>
+    <swiper-item class="tab-content">
+      <view>9</view>
+    </swiper-item>
+  </swiper>
+</view>
+  </scroll-view>
+
+
+</view>

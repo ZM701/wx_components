@@ -1,0 +1,52 @@
+ @import '../../components/Refresh/refreshView.wxss'; 
+@import "../../components/wxSearchView/wxSearchView.wxss";
+
+page{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+}
+.nav {
+    height: 80rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: #f7f7f7;
+    font-size: 16px;
+    white-space: nowrap;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    z-index: 99;
+}
+.nav-item {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+.nav-item.active{
+    color: red;
+}
+.tab-box{
+    padding-top: 80rpx;
+    height: 100%;
+    box-sizing: border-box;
+}
+.tab-content{
+    overflow-y: scroll;
+}
+/* 去掉滚动条 */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.uploadWrap{height:160rpx; width:100%; display: flex; display: -webkit-box; flex-direction: column;}  
+.upload_Item{ width: 160rpx; height: 160rpx;  flex: 1;}  
+.upload_Item_img{ width: 160rpx; height: 160rpx;border:1px solid red;} 

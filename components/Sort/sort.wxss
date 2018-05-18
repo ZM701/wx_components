@@ -1,0 +1,56 @@
+/* components/Sort/sort.wxss */
+.table {
+  border: 0px solid darkgray;
+  font-size: 32rpx;
+  padding: 5px;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td1,.td3 {
+    width:20%;
+}
+.td2 {
+    width:80%;
+}
+.td {
+   height: 100%;
+   line-height: 3rem;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+.th:nth-of-type(1),.th:nth-of-type(3){
+  width: 20%;
+}
+.s1{
+  border-right: none;
+}
+.s2{
+  border-bottom: none;
+}
+.s3{
+border-right:none;
+border-top:none;
+}
+.s4{
+  border-top:none;
+}
